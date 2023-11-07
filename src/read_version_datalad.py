@@ -29,6 +29,6 @@ datalad.api.run(
     message=f"Read data for {version}.",
     inputs=input_files,
     outputs=output_files,
-    dry_run="basic",
-    explicit=True,
+    dry_run=None,
+    explicit=False,
 )

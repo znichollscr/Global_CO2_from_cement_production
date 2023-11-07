@@ -2,7 +2,6 @@
 # interchange format
 import pandas as pd
 import primap2 as pm2
-import os
 import argparse
 from pathlib import Path
 from helper_functions import get_country_code
@@ -17,7 +16,7 @@ version = args.version
 
 
 compression = dict(zlib=True, complevel=9)
-root_path = Path("..")  # Path(os.path.realpath("__file__")).parents[0].absolute()
+root_path = Path(".")  # Path(os.path.realpath("__file__")).parents[0].absolute()
 
 ## set the configuration for conversion to primap2 format
 version_info = versions[version]
