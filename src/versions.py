@@ -1,0 +1,61 @@
+# configurations for the different versions. mainly metadata
+
+versions = {
+    "v230428": {
+        'date': '28-Apr-2023',
+        'ver_str_long': 'version 230428',
+        'ver_str_short': '230428',
+        "folder": "v230428",
+        "transpose": True,
+        "filename": "0. GCP-CEM.csv",
+        'ref': '10.5281/zenodo.7081360',
+        'ref2': '10.5194/essd-11-1675-2019',
+        'title': 'Global CO2 emissions from cement production',
+        'institution': "CICERO - Center for International Climate Research",
+        'filter_keep': {},
+        'filter_remove': {},
+        'contact': "johannes.guetschow@climate-resource.com",
+        'comment': ("Published by Robbie Andrew, converted to PRIMAP2 format by "
+                    "Johannes Gütschow"),
+        'unit': 'kt * CO2 / year',
+        'country_code': True,
+    },
+    "v220915": {
+        'date': '15-Sep-2022',
+        'ver_str_long': 'version 220915',
+        'ver_str_short': '220915',
+        "folder": "v220915",
+        "transpose": True,
+        "filename": "1. Cement_emissions_data.csv",
+        'ref': '10.5281/zenodo.7081360',
+        'ref2': '10.5194/essd-11-1675-2019',
+        'title': 'Global CO2 emissions from cement production',
+        'institution': "CICERO - Center for International Climate Research",
+        'filter_keep': {},
+        'filter_remove': {},
+        'contact': "johannes.guetschow@climate-resource.com",
+        'comment': ("Published by Robbie Andrew, converted to PRIMAP2 format by "
+                    "Johannes Gütschow"),
+        'unit': 'kt * CO2 / year',
+        'country_code': False,
+    },
+    "v220516": {
+        'date': '16-May-2022',
+        'ver_str_long': 'version 220516',
+        'ver_str_short': '220516',
+        "folder": "v220516",
+        "transpose": True,
+        "filename": "1. Cement_emissions_data.csv",
+        'ref': '10.5281/zenodo.6553090',
+        'ref2': '10.5194/essd-11-1675-2019',
+        'title': 'Global CO2 emissions from cement production',
+        'institution': "CICERO - Center for International Climate Research",
+        'filter_keep': {},
+        'filter_remove': {},
+        'contact': "johannes.guetschow@climate-resource.com",
+        'comment': ("Published by Robbie Andrew, converted to PRIMAP2 format by "
+                    "Johannes Gütschow"),
+        'unit': 'kt * CO2 / year',
+        'country_code': False,
+    }
+}
