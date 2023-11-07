@@ -12,11 +12,11 @@ parser.add_argument("--version", help="Version to read")
 args = parser.parse_args()
 version = args.version
 
-root_path = Path("..")
+root_path = Path(".")
 
 version_info = versions[version]
-input_files = [root_path / downloaded_data_folder / version_info["folder"] / version_info[
-    "filename"]]
+input_files = [str(root_path / downloaded_data_folder / version_info["folder"] /
+               version_info["filename"])]
 suffixes = ['nc', 'yaml', 'csv']
 output_file_template = (root_path / downloaded_data_folder / version_info["folder"] /
                         get_output_filename(version))
@@ -29,6 +29,6 @@ datalad.api.run(
     message=f"Read data for {version}.",
     inputs=input_files,
     outputs=output_files,
-    dry_run=True,
+    dry_run="basic",
     explicit=True,
 )
