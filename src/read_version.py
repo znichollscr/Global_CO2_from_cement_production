@@ -22,7 +22,7 @@ root_path = Path(".")  # Path(os.path.realpath("__file__")).parents[0].absolute(
 version_info = versions[version]
 
 coords_cols = {
-    "area": "index",
+    "area": "ISO",
 }
 
 coords_terminologies = {"area": "ISO3", "category": "IPCC2006", "scenario": "PRIMAP"}
@@ -84,14 +84,15 @@ if not version_info["country_code"]:
         raise ValueError(
             "Exceptions occurred during mapping of country names to codes."
         )
+    # column names to str for conversion to dates
+    data_pd.columns = [f"{col:.0f}" for col in data_pd.columns]
+    
+    # country codes to col instead of index
+    data_pd = data_pd.reset_index()
+    data_pd = data_pd.rename(columns={'index': 'ISO'})
 else:
     data_pd = data_pd.drop(columns=["UN code", "Name"])
 
-# column names to str for conversion to dates
-data_pd.columns = [f"{col:.0f}" for col in data_pd.columns]
-
-# country codes to col instead of index
-data_pd = data_pd.reset_index()
 
 
 # convert to PRIMAP2 interchange format
