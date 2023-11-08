@@ -1,6 +1,25 @@
 # configurations for the different versions. mainly metadata
 
 versions = {
+    "v231016": {
+        'date': '10-Oct-2023',
+        'ver_str_long': 'version 231016',
+        'ver_str_short': '231016',
+        "folder": "v231016",
+        "transpose": False,
+        "filename": "0. GCP-CEM.csv",
+        'ref': '10.5281/zenodo.10008931',
+        'ref2': '10.5194/essd-11-1675-2019',
+        'title': 'Global CO2 emissions from cement production',
+        'institution': "CICERO - Center for International Climate Research",
+        'filter_keep': {},
+        'filter_remove': {},
+        'contact': "johannes.guetschow@climate-resource.com",
+        'comment': ("Published by Robbie Andrew, converted to PRIMAP2 format by "
+                    "Johannes Gütschow"),
+        'unit': 'kt * CO2 / year',
+        'country_code': True,
+    },
     "v230913": {
         'date': '13-Sep-2023',
         'ver_str_long': 'version 230913',

@@ -24,9 +24,11 @@ if output_folder.exists():
 else:
     output_files = []
 
+output_files = [str(f) for f in output_files]
+
 datalad.api.run(
     cmd=f"./venv/bin/python3 src/download_version.py --version {version}",
-    dataset=root_path,
+    dataset=str(root_path),
     message=f"Download data for {version}.",
     inputs=[],
     outputs=output_files,
