@@ -10,6 +10,7 @@ def task_setup_venv():
                     './venv/bin/pip install --upgrade pip wheel',
                     './venv/bin/pip install --upgrade --upgrade-strategy '
                     'eager -e .[dev]',
+                    # I needed .['dev'] for this to work but maybe it's just my shell..
                     'touch venv',],
         'targets': ['venv'],
         'verbosity': 2,

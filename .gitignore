@@ -1,6 +1,7 @@
 __pycache__
 venv
 .doit.db
+*.db
 .idea
 *.ipynb
 .ipynb_checkpoints
