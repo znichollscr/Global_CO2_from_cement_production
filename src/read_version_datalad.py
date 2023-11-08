@@ -18,7 +18,7 @@ version_info = versions[version]
 input_files = [str(root_path / downloaded_data_folder / version_info["folder"] /
                version_info["filename"])]
 suffixes = ['nc', 'yaml', 'csv']
-output_file_template = (root_path / downloaded_data_folder / version_info["folder"] /
+output_file_template = (root_path / extracted_data_folder / version_info["folder"] /
                         get_output_filename(version))
 output_files = [f"{str(output_file_template)}.{suffix}" for suffix in suffixes]
 
