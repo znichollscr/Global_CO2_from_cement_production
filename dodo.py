@@ -27,3 +27,12 @@ def task_read_version():
         'verbosity': 2,
         'setup': ['setup_venv'],
     }
+
+def task_download_version():
+    """ Download specific version of the data"""
+    return {
+        'actions': [f"./venv/bin/python src/download_version_datalad.py "
+                    f"--version={read_config['version']}"],
+        'verbosity': 2,
+        'setup': ['setup_venv'],
+    }
