@@ -6,3 +6,5 @@ Notes from exploring:
     - if forgetting to set up your venv often bites though, could be worth keeping, I'm on the fence (we don't have a good venv maintenance routine in other repos, you just have to know that forgetting to upgrade your venv is a possible reason for failures)
 
 - Wasn't clear to me if I could just run something to check things are working/reproduce existing reading, so I tried just downloading new instead
+    - this seemed to work, although I wasn't fully sure what would confirm success or failure
+
