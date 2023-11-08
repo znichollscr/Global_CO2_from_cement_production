@@ -1,0 +1,22 @@
+attrs:
+  references: 10.5281/zenodo.10008931, 10.5194/essd-11-1675-2019
+  rights: Creative Commons Attribution 4.0 International
+  contact: johannes.guetschow@climate-resource.com
+  title: Global CO2 emissions from cement production - version 231016
+  comment: Published by Robbie Andrew, converted to PRIMAP2 format by Johannes Gütschow
+  institution: CICERO - Center for International Climate Research
+  area: area (ISO3)
+  cat: category (IPCC2006)
+  scen: scenario (PRIMAP)
+time_format: '%Y'
+dimensions:
+  '*':
+  - time
+  - area (ISO3)
+  - scenario (PRIMAP)
+  - provenance
+  - source
+  - category (IPCC2006)
+  - entity
+  - unit
+data_file: Robbie_Andrew_Cement_Production_CO2_231016.csv
