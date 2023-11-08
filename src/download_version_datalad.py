@@ -21,6 +21,8 @@ version_info = versions[version]
 output_folder = root_path / downloaded_data_folder / version_info["folder"]
 if output_folder.exists():
     output_files = list(output_folder.iterdir())
+else:
+    output_files = []
 
 datalad.api.run(
     cmd=f"./venv/bin/python3 src/download_version.py --version {version}",
